@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Force</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header text-center p-0 m-0">
+        <img src="/images/Computer Force logo.png" alt="" style="width: 50px">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light menu" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="product.html">Product Categories</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Member
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="login.html">Member Login</a></li>
+                            <li><a class="dropdown-item" href="registration.html">Member Registration</a></li>
+                            <li><a class="dropdown-item" href="benefits.html">Member Benefits</a></li>
+                            <li><a class="dropdown-item" href="wishlist.html">Wishlist</a></li>
+                            <li><a class="dropdown-item" href="gift.html">Gift Vouchers</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="itnews.html">IT News /Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Customer Information
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="online.html">Online Enquires</a></li>
+                            <li><a class="dropdown-item" href="delivery.html">Delivery Information</a></li>
+                            <li><a class="dropdown-item" href="click_collect.html">Click and Collect Information</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            <li><a class="dropdown-item" href="site_map.html">Site Map</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col-md-10 pl-5 main">
+            <div class="member_form">
+                <form action="https://formspree.io/f/xwkyovjq" method="post" autocomplete="off">
+                    <div class="mb-3">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm_password">Confirm Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password" class="form-control"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="surname">Surname</label>
+                        <input type="text" id="surname" name="surname" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="gender">Gender</label>
+                        <input list="option_gender" id="gender" name="gender" class="form-control" required>
+                        <datalist id="option_gender">
+                            <option value="Female"></option>
+                            <option value="Male"></option>
+                        </datalist>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" class="form-control" required>
+                    </div>
+                    <div>
+                        <label for="suburb">Suburb</label>
+                        <input type="text" id="suburb" name="suburb" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="postcode">Postcode</label>
+                        <input type="number" id="postcode" name="postcode" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="state">State</label>
+                        <input list="option_state" id="state" name="state" class="form-control" required>
+                        <datalist id="option_state">
+                            <option value="Australian Capital Territory"></option>
+                            <option value="New South Wales"></option>
+                            <option value="Northern Territory"></option>
+                            <option value="Queensland"></option>
+                            <option value="South Australian"></option>
+                            <option value="Tasmanian"></option>
+                            <option value="Victorian"></option>
+                            <option value="Western Australia"></option>
+                        </datalist>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone_number">Phone number</label>
+                        <input type="tel" id="phone_number" name="phone_number" class="form-control">
+                    </div>
+                    <button type="reset" class="btn btn-primary mb-3">Clear</button>
+                    <button type="submit" class="btn btn-primary mb-3">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-2 aside">
+            <h2>Purchases</h2>
+            <div class="row">
+                <div class="col-sm-6">
+                    0 items
+                </div>
+                <div class="col-sm-6">
+                    Cart sub-total: $0
+                </div>
+            </div>
+            <button type="button" class="btn btn-secondary">Go to Checkout</button>
+        </div>
+    </div>
+
+    <div class="row footer align-items-center">
+        <div class="col">
+            <p> @Lei Wu</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
